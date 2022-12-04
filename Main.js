@@ -79,7 +79,7 @@ StudentName.onchange = function(){
     if(StudentName.value != '')
     {
 
-        if(/^[ء-ي\s]*$/.test(StudentName.value) || /^[A-Za-z\s]*$/.test(StudentName.value))
+        if(/^[ء-ي\s]*$/.test(StudentName.value) )
         {
             validStudentName.classList.remove('d-none');
             invalidStudentName.classList.add('d-none');
