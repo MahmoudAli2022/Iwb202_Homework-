@@ -1,19 +1,20 @@
-    <!DOCTYPE html>
-    <html lang="en" dir="rtl">
-    <head>
-        <title>homework</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
 
-        <!-- <pre> حفاظ على المسافة بين اسم الطالب و المستطيل النصي -->
-        <pre>
-            
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <!-- <pre> حفاظ على المسافة بين اسم الطالب و المستطيل النصي -->
+    <pre>
+
             <div class="form-body">
                 <div class="row">
                     <div class="form-holder">
@@ -21,8 +22,6 @@
                             <div class="form-items">
                                 <h3>أضافة طالب</h3>
             <form class="requires-validation" action="" >
-            
-        
                 <div class="col-md-12">
                 <input class="form-control" type="text" name="UserName " id="UserName" placeholder="UserName" required>
                 <div class="valid-feedback d-none" id="validUserName">Username field is valid!</div>
@@ -44,10 +43,10 @@
     <div class="col-md-12">
         <select class="form-select mt-3" name="programtype" id="programtype" required >
                                     <option value="">Program Type</option>
-                                    <option value="هندسة معلوماتية"> Bit </option>
-                                    <option value="تقانة اتصالات"> Bact</option> 
-                                    <option value="تقانة معلوماتية"> Bait</option>
-                                    <option value="الحقوق"> Bl  </option> 
+                                    <option value="Bit"> Bit </option>
+                                    <option value="Bact"> Bact</option> 
+                                    <option value="Bait"> Bait</option>
+                                    <option value="Bl"> Bl  </option> 
                         </select>
                     
                     <div class="valid-feedback d-none" id="validprogramtype">You selected a program type!</div>
@@ -77,7 +76,8 @@
     </div>
         </div>
         <div class="form-button mt-3">
-            <button id="submit" type="submit" disabled="disabled">أضافة</button>
+            <button id="mybutton" type="button"  onclick="myarray()">أضافة</button>
+       
         </div>
         </form>
                         </div>
@@ -94,117 +94,91 @@
 
     <h1>جدول اسماء الطلاب </h1><br>
     <!-- select
-    لاضافة مربع الخيارات -->\
+    لاضافة مربع الخيارات -->
 
         <select>
-            <option value="">All</option>
-            <option value="">Bait</option>
-            <option value="">Bact</option>
-            <option value="">Bit</option>
-            <option value="">Bl</option>
+            <option value="All">All</option>
+            <option value="Bait">Bait</option>
+            <option value="Bact">Bact</option>
+            <option value="Bit">Bit</option>
+            <option value="Bl">Bl</option>
     
     </select>
     <br><pre>
-    فرز حسب :           رقم المستخدم<input type="radio">  اسم الطالب<input type="radio">  البرنامج<input type="radio"></pre>
+    فرز حسب :           رقم المستخدم<input type="radio" id="NUser">  اسم الطالب<input type="radio" id="SName">  البرنامج<input type="radio" id="pro"></pre>
 
 
     <!-- تصميم الجدول -->
-        <table >
-            <!-- سطر الاساسي للجدول -->
+    <div id="show">
+        <table id="abc">  <!-- سطر الاساسي للجدول -->
             <thead>
-                <tr>
-                    <td>متسلسل</td>
-                    <td>اسم المستخدم</td>
-                    <td>اسم الطالب</td>
-                    <td>البرنامج</td>
-                </tr>
-                <!-- جسم الجدول و بداخلها الخلايا -->
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Aziz_21286</td>
-                    <td> عزيز اليونس</td>
-                    <td> BiT</td>
-                </tr>
-                <TR>
-                    <td>2</td>
-                    <td >
-                        wasem_57527
-                    </td>
-                    <td>وسيم البرادي</td>
-                    <td>BIT</td>
-                </TR>
-                <tr>
-                    <td>3</td>
-                    <td>
-                        Mahmod_193997
-                    </td>
-                    <td>محمود فياض </td>
-                    <td>
-                        TIC
-                    </td>
-                </tr>
-            </tbody>
-        
-        </table>
-                  </div>
-             </div>
-         </div>
-     </div>
- </div>
-  <hr>
-        <div class="form-body">
-            <div class="row">
-                <div class="form-holder">
-                    <div class="form-content">
-                        <div class="form-items">
-        <div class="form-button mt-3">
-            <button id="submit" type="submit" disabled="disabled">convert JSON</button>
-        </div>
+              <tr>
+                  <td>متسلسل</td>
+                  <td>اسم المستخدم</td>
+                  <td>اسم الطالب</td>
+                  <td>البرنامج</td>
+              </tr>
+              <!-- جسم الجدول و بداخلها الخلايا -->
+          </thead></table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <hr>
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <div class="form-button mt-3">
+                            <button id="submit" type="submit" disabled="disabled">convert JSON</button>
+                        </div>
 
-                    <br>
-                    <textarea  id="" cols="30" rows="10" readonly></textarea>
-       </div>
+                        <br>
+                        <textarea id="" cols="30" rows="10" readonly></textarea>
+                    </div>
                 </div>
-                     </div>
-                 </div>
             </div>
-         </div>
+        </div>
+    </div>
+    </div>
     </div>
 
 
-<script type="text/javascript">
-function cap(){
-    var alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V'
-                ,'W','X','Y','Z','1','2','3','4','5','6','7','8','9','0','a','b','c','d','e','f','g','h','i',
-                'j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', '!','@','#','$','%','^','&','*','+'];
-                var a = alpha[Math.floor(Math.random()*71)];
-                var b = alpha[Math.floor(Math.random()*71)];
-                var c = alpha[Math.floor(Math.random()*71)];
-                var d = alpha[Math.floor(Math.random()*71)];
-                var e = alpha[Math.floor(Math.random()*71)];
-                var f = alpha[Math.floor(Math.random()*71)];
+    <script type="text/javascript">
+        function cap() {
+            var alpha = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V'
+                , 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
+                'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '!', '@', '#', '$', '%', '^', '&', '*', '+'];
+            var a = alpha[Math.floor(Math.random() * 71)];
+            var b = alpha[Math.floor(Math.random() * 71)];
+            var c = alpha[Math.floor(Math.random() * 71)];
+            var d = alpha[Math.floor(Math.random() * 71)];
+            var e = alpha[Math.floor(Math.random() * 71)];
+            var f = alpha[Math.floor(Math.random() * 71)];
 
-                var final = a+b+c+d+e+f;
-                document.getElementById("capt").value=final;
-                document.getElementById("checkCap").value = '';
+            var final = a + b + c + d + e + f;
+            document.getElementById("capt").value = final;
+            document.getElementById("checkCap").value = '';
 
-                }
-                function validcap(){
-                var stg1 = document.getElementById('capt').value;
-                var stg2 = document.getElementById('textinput').value;
-                if(stg1==stg2){
-                    alert("Form is validated Succesfully");
-                    return true;
-                }else{
-                    alert("Please enter a valid captcha");
-                    return false;
-                }
-                }
+        }
+        function validcap() {
+            var stg1 = document.getElementById('capt').value;
+            var stg2 = document.getElementById('checkCap').value;
+            if (stg1 == stg2) {
+                alert("Form is validated Succesfully");
+                return true;
+            } else {
+                alert("Please enter a valid captcha");
+                return false;
+            }
+        }
 
-                cap();
-</script>
-              <script src="Main.js" type="text/javaScript"></script>    
-        </body>
-    </html>
+        cap();
+    </script>
+    <script src="Main.js" type="text/javaScript"></script>
+</body>
+
+</html>
